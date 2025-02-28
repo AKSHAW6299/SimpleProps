@@ -7,17 +7,18 @@ function App() {
 
   const data = {
     name: 'Anand',
-    txt: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, est 1!',
+    txt: '1st way to pass data through props!',
     salary: 123456
   }
 
   return (
     <>
-      {/* 1) */}
+      {/* In 2 ways we can pass data through props */}
+      {/* 1st way */}
       <Test data={data} />
 
-      {/* 2) */}
-      {/* <Dummy name='Santosh Yadav' salary={55556} college="Gurunanak Institute of Technology" /> */}
+      {/* 2nd way */}
+      <Dummy name='Santosh Yadav' salary={55556} txt="2nd way to pass data through props!" />
     </>
   )
 }
